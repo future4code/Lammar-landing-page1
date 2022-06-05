@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    background: purple;
+    height: 5vh;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    background: black;
+    height: 100vh;
+    color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    top: 100%;
+    position: sticky;
+    background: red;
+    color: white;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+}
