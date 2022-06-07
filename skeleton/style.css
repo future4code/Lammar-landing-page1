@@ -11,13 +11,6 @@ body {
     min-height: 100vh;
 }
 
-header {
-    display: flex;
-    height: 10vh;
-    align-items: center;
-    justify-content: center;
-}
-
 main {
     display: flex;
     height: 90vh;
@@ -140,3 +133,71 @@ footer {
     color: #00acee;
 }
 
+/* CABEÇALHO ! */
+
+header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#logo-header {
+    display: flex;
+}
+
+#logo-header:hover {
+    opacity: 0.7;
+}
+
+#logo-header > img {
+width: 18vh;
+}
+
+#menu-header {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+#button-header-arrow {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    margin-right: 60px;
+    color: black;
+}
+
+#button-header-arrow:hover img {
+    transform: translateX(25px);
+    transition: all 0.4s;
+}
+
+#button-header-arrow img {
+width: 25px;
+transition: all 0.4s;
+}
+
+#alugue-header { 
+    display: flex;
+    text-align: center;
+    background: #ff5c5c;
+    text-decoration: none;
+    width: 13vh;   
+    transition: all 0.4s;
+    border-radius: 15px;
+    padding: 10px 2px 10px 2px;
+    box-shadow: 0 4px 8px 0 rgb(83, 82, 82);
+}
+
+#alugue-header span {
+    align-self: center;
+    color: whitesmoke;
+}
+
+#alugue-header:hover {
+    background: black;
+    height: 80px;
+    border-radius: 0px;
+    transition: all 0.7s;
+}
