@@ -13,7 +13,7 @@ body {
 
 main {
     display: flex;
-    height: 90vh;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -23,6 +23,7 @@ main {
 footer {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     top: 100%;
     position: sticky;
     align-items: center;
@@ -183,7 +184,7 @@ header {
     text-decoration: none; 
     transition: all 0.4s;
     border-radius: 15px;
-    padding: 10px 10px;
+    padding: 10px;
     box-shadow: 0 4px 8px 0 rgb(83, 82, 82);
 }
 
@@ -196,4 +197,54 @@ header {
     background: black;
     border-radius: 0px;
     transition: all 0.7s;
+}
+
+/* PÁGINA DE AJUDA */
+
+#secao-texto-pagina-ajuda {
+    display: flex;
+    max-width: 600px;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+}
+.titulo-ajuda {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+#secao-duvidas-frequentes {
+    display: flex;
+    flex-direction: column;
+    background-color: #ff5c5c;
+    color: #fff;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+}
+.titulo-menor-ajuda {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#secao-formulario-ajuda {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+}
+.frase-ajuda {
+    max-width: 420px;
+    text-align: center;
+    margin: 20px 0px;
+}
+.formulario {
+    max-width: 650px;
+    padding: 50px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: rgb(102, 102, 102, 0.3);
 }
