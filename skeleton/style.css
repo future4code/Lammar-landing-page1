@@ -31,30 +31,30 @@ footer {
     border-top: 1rem solid #ff5c5c;
 }
 #logo-rodape {
-    width: 25vh;
-    margin: 1vh;
+    width: 200px;
+    margin: 10px;
 }
 
 .menu-rodape {
-    margin: 2vh;
+    margin: 20px;
     border-top: 1px solid rgb(102, 102, 102, 0.3);
     border-bottom: 1px solid rgb(102, 102, 102, 0.3);
-    padding: 1.5vh;
+    padding: 15px;
 }
 
 .menu-rodape a {
     text-decoration: none;
     color: black;
-    padding: 3vh;
+    padding: 30px;
     font-size: 1.3rem;
 }
 
-#menu-rodape a:hover {
+.menu-rodape a:hover {
     text-decoration: underline;
 }
 
 .paragrafo-rodape {
-    margin: 1vh;
+    margin: 10px;
 }
 
 #botao-alugue {
@@ -66,7 +66,7 @@ footer {
 }
 
 .redes {
-    margin: 1vh;
+    margin: 10px;
 }
 .redes a{
     text-decoration: none;
@@ -148,7 +148,8 @@ header {
 }
 
 #logo-header > img {
-width: 18vh;
+    width: 200px;
+    margin: 5px 0px;
 }
 
 #menu-header {
@@ -171,8 +172,8 @@ width: 18vh;
 }
 
 #button-header-arrow img {
-width: 25px;
-transition: all 0.4s;
+    width: 25px;
+    transition: all 0.4s;
 }
 
 #alugue-header { 
@@ -182,7 +183,7 @@ transition: all 0.4s;
     text-decoration: none; 
     transition: all 0.4s;
     border-radius: 15px;
-    padding: 10px 2px 10px 2px;
+    padding: 10px 10px;
     box-shadow: 0 4px 8px 0 rgb(83, 82, 82);
 }
 
