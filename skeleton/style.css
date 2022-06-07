@@ -248,3 +248,90 @@ header {
     margin: auto;
     background-color: rgb(102, 102, 102, 0.3);
 }
+/* CONTEUDO DA PÁGINA 'nosso-time' */
+
+.imagemBanner img{
+    display: flex;
+    padding-top: 40px;
+    width: 100%;
+    height: 400px;
+}
+
+.cabec1{
+    display: flex;
+    padding: 70px;
+    color: #ff5c5c;
+    font-size: 35px;
+}
+
+.cabec2{
+    display: flex;
+    padding: 120px;
+}
+
+.container{
+    align-items: center;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fotoNei{
+    float: left;
+    width: 750px;
+    align-items: center;
+    justify-content: center;
+}
+
+.fotojoao{
+    float: right;
+    width: 750px;
+    align-items: center;
+    justify-content: center;
+}
+.fotoRafa{
+    float: left;
+    width: 750px;
+    align-items: center;
+    justify-content: center;
+}
+
+.dadosDaGalera{
+    margin-bottom: 200px;
+    padding: 20px 10px 40px 30px;
+    height: 35vh;
+    background-color:#ff5c5c;
+    border-radius: 8px;
+}
+
+.dadosDaGalera img{
+    padding-top: 5px;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    border-radius: 90%;
+    transition: 1s;
+}
+a.cargos {
+    padding-top: 10px;
+    margin-left: 120px;
+    position: relative;
+    text-decoration: none;
+    padding: 0 20px;
+    color: white;
+    cursor:default;
+}
+
+a.cargos:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 0%;
+    left: 20px;
+    bottom: -10px;
+    transition: 0.5s;
+}
+a.cargos:hover:after{
+    width: 80%;
+}
