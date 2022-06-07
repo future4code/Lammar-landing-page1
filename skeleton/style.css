@@ -166,7 +166,7 @@ width: 18vh;
 }
 
 #button-header-arrow:hover img {
-    transform: translateX(25px);
+    transform: translateX(10px);
     transition: all 0.4s;
 }
 
