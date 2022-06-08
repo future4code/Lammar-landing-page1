@@ -227,14 +227,17 @@ header {
 }
 
 #list {
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
     height: 90vh;
+    transform: translateY(-200%);
+    transition: all 0.5s;
     background: whitesmoke;
     box-shadow: 0 4px 8px 0 rgb(83, 82, 82);
+    margin-bottom:-90vh;
 }
 
 #button-header-arrow {
@@ -250,7 +253,8 @@ header {
 
 
 #check:checked ~ #list{
-    display: flex;
+    transform: translateY(0%);
+    margin-bottom: 0;
   }
 
 }
