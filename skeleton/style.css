@@ -395,3 +395,80 @@ a.cargos:after{
 a.cargos:hover:after{
     width: 80%;
 }
+@media (max-width: 800px) {
+    .imagemBanner img {
+        margin-left: 0px;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .cabec1 {
+        display: inline-flex;
+        font-size: 18px;
+        margin-left: -20px;
+        width: 50%;
+        left: 0;
+    }
+
+    .container .cabec2 {
+        text-align: justify;
+        margin-left: -60px;
+        margin-right: -70px;
+        text-align: left;
+        font-size: 12px;
+    }
+
+    img.fotoNei {
+        width: 30%;
+    }
+
+    .dadosDaGalera {
+        height: 10%;
+    }
+
+    .dadosDaGalera p {
+        text-align: justify;
+        font-size: 10px;
+        flex-wrap: wrap;
+        margin-left: -320px;
+        margin-right: -120px;
+    }
+    .dadosDaGalera .textojoao{
+            text-align: justify;
+            font-size: 10px;
+            flex-wrap: wrap;
+            margin-left: -30px;
+            margin-right: -380px;
+        }
+    
+
+    a.cargos {
+        margin-left: 200px;
+        position: absolute;
+        font-size: 12px;
+        left: -70px;
+        white-space: nowrap;
+    }
+
+    a.cargosjoao {
+        margin-left: 90px;
+        position: absolute;
+        font-size: 12px;
+        left: -70px;
+        white-space: nowrap;
+    }
+
+    img.fotojoao{
+        width: 30%;
+    }
+    p.textojoao{
+        left: 0;
+        margin-left: -35px;
+        margin-right: -360px;
+        flex-wrap: wrap;
+        text-align: justify;
+        font-size: 12px;
+    }
+}
