@@ -272,6 +272,11 @@ header {
         margin-bottom: 0;
     }
 
+    .menu-rodape {
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 
 
@@ -308,8 +313,8 @@ header {
     text-align: justify;
 }
 
-.titulo-menor-ajuda {
-    font-size: 2rem;
+.titulo-ajuda-branco {
+    font-size: 2.5rem;
     font-weight: 600;
     text-align: center;
     color: #fff;
@@ -336,6 +341,191 @@ header {
     border-radius: 10px;
     margin: auto;
     background-color: #eeeded;
+}
+
+.request-form {
+    padding: 5vh 5vw;
+}
+
+.campo {
+    margin-top: 25px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+.campo input {
+    border: 1px solid gray;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+}
+.campo textarea {
+    border: 1px solid gray;
+    resize: vertical;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+}
+#div-botao {
+    text-align: center;
+}
+.botao {
+    cursor: pointer;
+    background-color: #ff5c5c;
+    border: 0;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 25px;
+    height: 50px;
+    line-height: 2.72;
+    padding: 0 2em;
+}
+.botao:hover {
+    color: #ff5c5c;
+    background-color: #fff;
+    border: 1px solid #ff5c5c;
+}
+
+#lista-de-perguntas {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 650px;
+}
+
+.item1-lista, .item2-lista {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(128, 128, 128, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+.ultimo-item-lista {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 2px solid rgb(128, 128, 128, 0.5);
+    border-radius: 10px;
+}
+
+.texto-escondido1, .texto-escondido2, .texto-escondido3 {
+    display: none;
+}
+#clicar1:checked ~ .texto-escondido1{
+    display: inline-block;
+    border-bottom: 1px solid rgb(128, 128, 128, 0.5);
+    padding: 10px;
+    width: 650px;
+}
+#clicar2:checked ~ .texto-escondido2{
+    display: block;
+    border-bottom: 1px solid rgb(128, 128, 128, 0.5);
+    padding: 10px;
+    width: 650px;
+}
+
+#clicar3:checked ~ .texto-escondido3{
+    display: block;
+    border-bottom: 1px solid rgb(128, 128, 128, 0.5);
+    padding: 10px;
+    width: 650px;
+}
+
+.botao-clicar1, .botao-clicar2, .botao-clicar3 {
+    cursor: pointer;
+}
+
+.botao-clicar1, .botao-clicar2, .botao-clicar3 i {
+    font-size: 1.5rem;
+    color: #ff5c5c;
+}
+
+#clicar1, #clicar2, #clicar3 {
+    display: none;
+}
+
+.escondido {
+    display: flex;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+.pergunta {
+    display: flex;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+.pergunta span {
+    display: block;
+    width: 570px;
+}
+
+@media (max-width: 800px){
+    #secao-texto-pagina-ajuda {
+        max-width: 300px;
+        margin: 70px 0px;
+    }
+    #secao-duvidas-frequentes {
+        padding-bottom: 50px;
+    }  
+    #secao-formulario-ajuda {
+        margin: 70px 0px;
+    }
+    .frase-ajuda {
+        max-width: 300px;
+    }
+    .formulario {
+        width: 300px;
+    }
+    #lista-de-perguntas {
+        width: 300px;
+    }
+    #clicar1:checked ~ .texto-escondido1{
+        width: 300px;
+    }
+    #clicar2:checked ~ .texto-escondido2{
+        width: 300px;
+    }
+    #clicar3:checked ~ .texto-escondido3{
+        width: 300px;
+    }
+    .pergunta span {
+        width: 250px;
+    }
+    .titulo-ajuda {
+        font-size: 1.8rem;
+    }
+    .titulo-ajuda-branco {
+        font-size: 1.8rem;
+        max-width: 300px;
+    }
+    .campo label {
+        margin-bottom: 5px;
+        font-weight: 700;
+        font-size: 0.875rem;
+    }
+    .botao {
+        border-radius: 100px;
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: 25px;
+        height: 50px;
+        line-height: 2.72;
+        padding: 0 2em;
+    }
 }
 
 /* CONTEUDO DA PÁGINA 'nosso-time' */
@@ -538,25 +728,22 @@ INDEX */
 
 .containerIndex {
     display: flex;
-    width: 100vw;
+    width: 100%;
     flex-direction: column;
     padding-top: 90px;
     align-items: center;
     justify-content: center;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
 }
 
-.logoIndex {
-    display: flex;
-    width: 100vw;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
+.logoIndex img {
+    width: 300px;
+    text-align: center;
 }
 
 .indexLogo {
     display: flex;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
     flex-direction: row;
     margin-left: 50px;
@@ -599,8 +786,6 @@ INDEX */
 }
 
 .textoPorque {
-    display: flex;
-    flex-direction: row;
     font-size: 26px;
     font-weight: 500;
     text-align: center;
@@ -626,14 +811,11 @@ INDEX */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
-
 }
 
 .botaoSecund {
     margin-top: 0px;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     text-decoration: none;
     width: 300px;
     max-width: 300px;
@@ -661,7 +843,6 @@ a .botaoSecund {
     margin-top: 0px;
     margin-bottom: 20px;
 }
-
 
 .responsivo {
     display: none;
@@ -711,7 +892,7 @@ a .botaoSecund {
         border-radius: 8px;
         border: 2px black solid;
         flex-direction: column;
-        width: 100vw;
+        width: 100%;
         margin-bottom: 50px;
     }
 
@@ -767,12 +948,12 @@ a .botaoSecund {
 }
 
 .section-71-pq {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .section-71-mds {
-    margin-bottom: 25px;
+    margin-bottom: 100px;
 }
 
 .logo-aluguel {
