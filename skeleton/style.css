@@ -330,19 +330,6 @@ header {
     font-weight: 700;
     font-size: 0.875rem;
 }
-.campo input {
-    border: 1px solid gray;
-    width: 100%;
-    padding: 10px;
-    border-radius: 8px;
-}
-.campo textarea {
-    border: 1px solid gray;
-    resize: vertical;
-    padding: 10px;
-    border-radius: 8px;
-    width: 100%;
-}
 
 
 /* CONTEUDO DA PÁGINA 'nosso-time' */
