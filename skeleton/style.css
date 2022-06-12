@@ -312,7 +312,6 @@ header {
 
 .imagemBanner img{
     display: flex;
-    padding-top: 40px;
     width: 100%;
     height: 400px;
 }
@@ -392,8 +391,33 @@ a.cargos:after{
     bottom: -10px;
     transition: 0.5s;
 }
+
+    a.cargosjoao {
+        padding-top: 10px;
+        margin-left: 120px;
+        position: relative;
+        text-decoration: none;
+        padding: 0 20px;
+        color: white;
+        cursor:default;
+    }
+    
+    a.cargosjoao:after{
+        content: "";
+        position: absolute;
+        background-color: white;
+        height: 2px;
+        width: 0%;
+        left: 20px;
+        bottom: -10px;
+        transition: 0.5s;
+}
 a.cargos:hover:after{
     width: 80%;
+}
+
+    a.cargosjoao:hover:after{
+        width: 80%;
 }
 @media (max-width: 800px) {
     .imagemBanner img {
@@ -470,5 +494,193 @@ a.cargos:hover:after{
         flex-wrap: wrap;
         text-align: justify;
         font-size: 12px;
+    }
+}
+
+/* 
+INDEX */
+
+.containerIndex {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    padding-top: 90px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 150px;
+}
+
+.logoIndex {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.indexLogo {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 50px;
+}
+
+.mensagembanner {
+    display: flex;
+    flex-direction: column;
+    font-size: 26px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 90px;
+}
+
+.fotoIndex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fotoIndex img {
+    width: 300px;
+    margin-left: 50px;
+    position: absolute;
+}
+
+.textoIndex {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffd4e8;
+    border-radius: 40px;
+    width: 90vw;
+    height: 270px;
+    padding-top: 30px;
+    padding-left: 370px;
+}
+
+.textoPorque {
+    display: flex;
+    flex-direction: row;
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.a4cartem {
+    color: #ff5c5c;
+    font-weight: 700;
+}
+
+.textoEIcone img {
+    left: 0;
+    margin-left: 430px;
+    width: 30px;
+}
+
+.textoEIcone {
+    display: flex;
+    padding-left: 50px;
+}
+.botaoz{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+.botaoSecund{
+    margin-top: 0px;
+    margin-bottom: 70px;
+    text-decoration: none;
+    width: 300px;
+    max-width: 300px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 4px solid #ff5c5c;
+    border-radius: 8em;
+    background-color: transparent;
+    color: #ff5c5c;
+    font-size: 1.2em;
+    line-height: 140%;
+    font-weight: 900;
+    text-align: center;
+}
+.botaoSecund:hover{
+    border: 4px solid black;
+    transition: all 0.4s;
+    color: white;
+    background-color: black;
+}
+a .botaoSecund{
+
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+
+.responsivo{
+    display: none;
+}
+.containerResp{
+    display: none;
+}
+.velocidade{
+    display: none;
+}
+
+
+@media screen and (max-width: 580px)
+{
+    .textoIndex {
+        display: none;
+        font-size: 9px;
+    }
+    .textoEIcone {
+        display: none;
+        margin-left: -240px;
+        font-size: 9px;
+    }
+    .textoEIcone img{
+        display: none;
+        width: 2%;
+        left: -270px;
+    }
+    .fotoIndex>img{
+        display: none;
+        margin-left: 10px;
+        width: 30%;
+        height: 30%;
+    }
+    .textoIndex{
+        display: none;
+        height: 30vh;
+    }
+    .velocidade{
+        display: flex;
+        border-radius: 8px;
+        border:1px black solid;
+        flex-direction: column;
+        width: 100vw;
+        background-color: #ffd4e8;
+        margin-bottom: 50px;
+    }
+    .containerResp{
+        margin-top: -100px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .containerResp img{
+        padding-top: -70px;
+        width: 110%;
+        height: 120%;
+        padding-bottom: 50px;
+    }
+    .indexLogo img{
+        display: flex;
+        margin-left: -30px;
+        width: 120vw;
     }
 }
