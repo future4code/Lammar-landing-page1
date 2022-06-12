@@ -545,13 +545,14 @@ header {
 
 .cabec2 {
     display: flex;
-    padding: 120px;
+    flex-wrap: wrap;
+    margin-left: 125px;
 }
 
 .container {
+    display: flex;
     align-items: center;
     height: 60vh;
-    display: flex;
     justify-content: space-between;
 }
 
@@ -665,8 +666,8 @@ a.cargosjoao:hover:after {
     }
 
     .container .cabec2 {
+        display: flex;
         position: absolute ;
-        white-space: nowrap;
         left: 100px;
         text-align: justify;
         text-align: left;
