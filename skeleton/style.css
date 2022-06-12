@@ -321,15 +321,7 @@ header {
 .request-form {
     padding: 5vh 5vw;
 }
-.campo {
-    margin-top: 25px;
-}
-.campo label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: 700;
-    font-size: 0.875rem;
-}
+
 
 
 /* CONTEUDO DA PÁGINA 'nosso-time' */
