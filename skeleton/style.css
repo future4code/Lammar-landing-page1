@@ -643,7 +643,11 @@ a.cargosjoao:hover:after {
     width: 80%;
 }
 
-@media (max-width: 800px) {
+.responsNeiRafaJoao{
+    display: none;
+}
+
+@media (max-width: 1130px) {
     .imagemBanner img {
         margin-left: 0px;
         width: 100%;
@@ -656,14 +660,15 @@ a.cargosjoao:hover:after {
         display: inline-flex;
         font-size: 18px;
         margin-left: -20px;
-        width: 50%;
+        width: 100%;
         left: 0;
     }
 
     .container .cabec2 {
+        position: absolute ;
+        white-space: nowrap;
+        left: 100px;
         text-align: justify;
-        margin-left: -60px;
-        margin-right: -70px;
         text-align: left;
         font-size: 12px;
     }
@@ -673,7 +678,7 @@ a.cargosjoao:hover:after {
     }
 
     .dadosDaGalera {
-        height: 10%;
+        display: none;
     }
 
     .dadosDaGalera p {
@@ -721,7 +726,26 @@ a.cargosjoao:hover:after {
         text-align: justify;
         font-size: 12px;
     }
+    .responsNeiRafaJoao{
+        text-align: justify;
+        padding-top: 25px;
+        padding-right: 10px;
+        display: flex;
+        background-color: #ff5c5c;
+        height: 240px;
+        margin-top: 5px;
+        font-size: 11px;
+    }
+    .responsNeiRafaJoao img{
+        width: 200px;
+        height: 125px;    
+    }
+    .tituloNome{
+        display: flex;
+        flex-direction: column;
+    }
 }
+
 
 /* 
 INDEX */
