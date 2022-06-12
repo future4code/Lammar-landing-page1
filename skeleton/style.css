@@ -252,10 +252,10 @@ header {
 }
 
 
-#check:checked~#list {
-    transform: translateY(0%);
-    margin-bottom: 0;
-}
+    #check:checked~#list {
+        transform: translateY(0%);
+        margin-bottom: 0;
+    }
 
 }
 
@@ -289,6 +289,7 @@ header {
     padding-bottom: 75px;
     text-align: justify;
 }
+
 .titulo-menor-ajuda {
     font-size: 2rem;
     font-weight: 600;
@@ -371,38 +372,7 @@ header {
     background-color: #fff;
     width: 650px;
 }
-.item1-lista, .item2-lista {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 2px solid rgb(128, 128, 128, 0.5);
-    padding: 10px;
-    border-radius: 10px;
-}
-.ultimo-item-lista {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    border-bottom: 2px solid rgb(128, 128, 128, 0.5);
-    border-radius: 10px;
-}
 
-.texto-escondido1, .texto-escondido2, .texto-escondido3 {
-    display: none;
-}
-#clicar1:checked ~ .texto-escondido1{
-    display: inline-block;
-    border-bottom: 1px solid rgb(128, 128, 128, 0.5);
-    padding: 10px;
-    width: 650px;
-}
-#clicar2:checked ~ .texto-escondido2{
-    display: block;
-    border-bottom: 1px solid rgb(128, 128, 128, 0.5);
-    padding: 10px;
-    width: 650px;
-}
 
 
 /* CONTEUDO DA PÁGINA 'nosso-time' */
