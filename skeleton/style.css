@@ -266,6 +266,7 @@ header {
     align-items: center;
     justify-content: center;
 }
+
 #secao-texto-pagina-ajuda {
     display: flex;
     max-width: 600px;
@@ -342,37 +343,6 @@ header {
     border-radius: 8px;
     width: 100%;
 }
-#div-botao {
-    text-align: center;
-}
-.botao {
-    cursor: pointer;
-    background-color: #ff5c5c;
-    border: 0;
-    border-radius: 100px;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 400;
-    margin-top: 25px;
-    height: 50px;
-    line-height: 2.72;
-    padding: 0 2em;
-}
-.botao:hover {
-    color: #ff5c5c;
-    background-color: #fff;
-    border: 1px solid #ff5c5c;
-}
-
-#lista-de-perguntas {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid gray;
-    border-radius: 10px;
-    background-color: #fff;
-    width: 650px;
-}
-
 
 
 /* CONTEUDO DA PÁGINA 'nosso-time' */
