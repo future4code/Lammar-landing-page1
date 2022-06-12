@@ -544,14 +544,17 @@ INDEX */
 
 .fotoIndex img {
     width: 300px;
+    margin-top: 40px;
     margin-left: 50px;
     position: absolute;
 }
 
 .textoIndex {
+    color: black;
     display: flex;
     flex-direction: column;
-    background-color: #ffd4e8;
+    border: 4px #ff5c5c solid;
+    background-color:rgba(150, 150, 150, 0.299);
     border-radius: 40px;
     width: 90vw;
     height: 270px;
@@ -660,10 +663,9 @@ a .botaoSecund{
     .velocidade{
         display: flex;
         border-radius: 8px;
-        border:1px black solid;
+        border:2px black solid;
         flex-direction: column;
         width: 100vw;
-        background-color: #ffd4e8;
         margin-bottom: 50px;
     }
     .containerResp{
@@ -682,5 +684,8 @@ a .botaoSecund{
         display: flex;
         margin-left: -30px;
         width: 120vw;
+    }
+    .textovel{
+        margin-left: 20px;
     }
 }
