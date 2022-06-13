@@ -512,11 +512,6 @@ header {
         font-size: 1.8rem;
         max-width: 300px;
     }
-    .campo label {
-        margin-bottom: 5px;
-        font-weight: 700;
-        font-size: 0.875rem;
-    }
     .botao {
         border-radius: 100px;
         font-size: 1rem;
@@ -980,7 +975,7 @@ a .botaoSecund {
 }
 
 .logo-aluguel {
-    width: 250px;
+    height: 150px;
 }
 
 .span-aluguel {
@@ -1101,6 +1096,7 @@ button:active {
     width: 100%;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
 }
 #secao-logo{
     display: flex;
@@ -1108,6 +1104,7 @@ button:active {
     width: 100%;
     align-items: center;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .titulo-contato {
@@ -1127,6 +1124,10 @@ button:active {
     width: 300px;
 }
 
+#div-botao-contato {
+    text-align: center;
+    margin-top: 25px;
+}
 .botao-continuar {
     cursor: pointer;
     background-color: #ff5c5c;
@@ -1135,12 +1136,9 @@ button:active {
     color: #fff;
     font-size: 1.2rem;
     font-weight: 400;
-    margin-top: 25px;
-    height: 50px;
-    line-height: 2.72;
-    padding: 0 2em;
-    margin-left: 30px;
-    margin-bottom: 5px;
+    height: 45px;
+    padding: 0 1.8em;
+    margin-left: 60px;
 }
 .botao-continuar:hover {
     color: #ff5c5c;
@@ -1154,11 +1152,46 @@ button:active {
     font-weight: 400;
     height: 50px;
     line-height: 2.72;
-    margin-bottom: 5px;
-    margin-right: 30px;
 }
 .botao-voltar:hover {
     color: #ff5c5c;
     text-decoration: underline;
 }
 
+@media (max-width: 800px) {    
+    .titulo-contato {
+        font-size: 1.8rem;
+    }
+    
+    .frase-contato {
+        font-size: 1.2rem;
+    }
+    
+    #logo-contato {
+        width: 250px;
+    }
+    
+    .botao-continuar {
+        cursor: pointer;
+        background-color: #ff5c5c;
+        border: 1px solid #ff5c5c;
+        border-radius: 100px;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: 25px;
+        height: 50px;
+        line-height: 2;
+        padding: 0 1.5em;
+        margin-left: 20px;
+    }
+    .botao-voltar {
+        text-decoration: none;
+        cursor: pointer;
+        color: black;
+        font-size: 1rem;
+        font-weight: 400;
+        height: 50px;
+        line-height: 2.72;
+    }
+}
