@@ -541,6 +541,7 @@ header {
 .cabec2 {
     display: flex;
     flex-wrap: wrap;
+    margin-right: 90px;
     margin-left: 125px;
 }
 
@@ -664,6 +665,7 @@ a.cargosjoao:hover:after {
         display: flex;
         position: absolute ;
         left: 100px;
+        margin-right: 0;
         text-align: justify;
         text-align: left;
         font-size: 12px;
@@ -876,7 +878,7 @@ a .botaoSecund {
 }
 
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 1150px) {
     .textoIndex {
         display: none;
         font-size: 9px;
@@ -907,6 +909,8 @@ a .botaoSecund {
     }
 
     .velocidade {
+        text-align: justify;
+        align-items: center;
         display: flex;
         border-radius: 8px;
         border: 2px black solid;
