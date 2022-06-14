@@ -526,29 +526,26 @@ header {
 /* CONTEUDO DA PÁGINA 'nosso-time' */
 
 .imagemBanner img {
-    display: flex;
     width: 100%;
     height: 400px;
 }
 
 .cabec1 {
-    display: flex;
-    padding: 70px;
     color: #ff5c5c;
     font-size: 35px;
+    margin: 100px 50px;
+    width: 250px;
 }
 
 .cabec2 {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: 90px;
-    margin-left: 125px;
+    text-align: justify;
+    margin: 100px 50px;
+    width: 300px;
 }
 
 .container {
     display: flex;
     align-items: center;
-    height: 60vh;
     justify-content: space-between;
 }
 
@@ -574,11 +571,13 @@ header {
 }
 
 .dadosDaGalera {
+    display: flex;
     margin-bottom: 160px;
     padding: 20px 10px 40px 30px;
-    height: 35vh;
+    height: 350px;
     background-color: #ff5c5c;
     border-radius: 8px;
+    align-items: center;
 }
 
 .dadosDaGalera img {
@@ -590,59 +589,21 @@ header {
     transition: 1s;
 }
 
-a.cargos {
-    padding-top: 10px;
-    margin-left: 120px;
-    position: relative;
-    text-decoration: none;
-    padding: 0 20px;
-    color: white;
-    cursor: default;
-}
+.cargos {
+    color: #fff;
 
-a.cargos:after {
-    content: "";
-    position: absolute;
-    background-color: white;
-    height: 2px;
-    width: 0%;
-    left: 20px;
-    bottom: -10px;
-    transition: 0.5s;
-}
-
-a.cargosjoao {
-    padding-top: 10px;
-    margin-left: 120px;
-    position: relative;
-    text-decoration: none;
-    padding: 0 20px;
-    color: white;
-    cursor: default;
-}
-
-a.cargosjoao:after {
-    content: "";
-    position: absolute;
-    background-color: white;
-    height: 2px;
-    width: 0%;
-    left: 20px;
-    bottom: -10px;
-    transition: 0.5s;
-}
-
-a.cargos:hover:after {
-    width: 80%;
-}
-
-a.cargosjoao:hover:after {
-    width: 80%;
 }
 
 .responsNeiRafaJoao{
     display: none;
 }
+.div-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+}
+
 
 @media (max-width: 1130px) {
     .imagemBanner img {
@@ -654,21 +615,15 @@ a.cargosjoao:hover:after {
     }
 
     .container .cabec1 {
-        display: inline-flex;
         font-size: 18px;
-        margin-left: -20px;
-        width: 100%;
-        left: 0;
+        margin: 50px 25px;
+        width: 130px;
     }
 
     .container .cabec2 {
-        display: flex;
-        position: absolute ;
-        left: 100px;
-        margin-right: 0;
-        text-align: justify;
-        text-align: left;
         font-size: 12px;
+        margin: 50px 25px;
+        width: 200px;
     }
 
     img.fotoNei {
@@ -696,7 +651,7 @@ a.cargosjoao:hover:after {
     }
 
 
-    a.cargos {
+    .cargos {
         margin-left: 200px;
         position: absolute;
         font-size: 12px;
@@ -704,7 +659,7 @@ a.cargosjoao:hover:after {
         white-space: nowrap;
     }
 
-    a.cargosjoao {
+    .cargosjoao {
         margin-left: 90px;
         position: absolute;
         font-size: 12px;
@@ -730,18 +685,23 @@ a.cargosjoao:hover:after {
         padding-right: 10px;
         display: flex;
         background-color: #ff5c5c;
-        height: 240px;
+        height: 180px;
         margin-top: 5px;
         font-size: 11px;
     }
     .responsNeiRafaJoao img{
         width: 200px;
-        height: 125px;    
+        height: 125px;
+        margin-right: 20px;    
     }
     .tituloNome{
         display: flex;
         flex-direction: column;
     }
+    #container-responsivo-dados{
+        margin-bottom: 100px;
+    }
+    
 }
 
 
@@ -876,7 +836,23 @@ a .botaoSecund {
 .velocidade {
     display: none;
 }
+.texto-e-icone-responsivo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff5c5c;
+}
 
+.texto-e-icone-responsivo ion-icon {
+    margin-right: 20px;
+    font-size: 1.3rem;
+}
+#container-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 @media screen and (max-width: 1150px) {
     .textoIndex {
@@ -915,7 +891,7 @@ a .botaoSecund {
         border-radius: 8px;
         border: 2px black solid;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         margin-bottom: 50px;
     }
 
@@ -938,7 +914,7 @@ a .botaoSecund {
     }
 
     .textovel {
-        margin-left: 20px;
+        margin: 5px 15px;
     }
 }
 
@@ -970,7 +946,7 @@ a .botaoSecund {
 
 .section-71-pq {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .section-71-mds {
@@ -1075,15 +1051,9 @@ button:active {
     }
 
 }
-
-
-@media (max-width: 1150px) {
-    .section-71-mds {
-        display: none;
-    }
-
+@media screen and (max-width: 1150px) {
     .section-71-pq {
-        display: none;
+        margin-bottom: 0;
     }
 }
 
