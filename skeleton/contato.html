@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Peça já seu 4Cars!</title>
+    <link rel="shortcut icon" href="img/logo-sem-texto.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+</head>
+
+<body  id="pagina-contato">
+  <main>
+    <section id="secao-logo">
+      <a href="index.html"><img id="logo-contato" src="img/logo4cars-contato.png" alt="LOGO"></a>
+    </section>
+    <section id="secao-formulario-contato">
+      <div class="formulario">
+      <h1 class="titulo-contato">Para começar, precisamos te conhecer um pouco mais</h1>
+      <h2 class="frase-contato">Preencha seus dados e nossa equipe de vendas trará a melhor oferta para você!</h2>
+        <form action="#" class="request-form">
+          <div class="campo">
+              <label for="nome">Nome Completo</label>
+              <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo." required>
+          </div>
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite o seu e-mail." required>
+        </div>
+        <div class="campo">
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="99-99999-9999" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required>
+        </div>
+        <div id="div-botao-contato">
+          <a href="aluguel.html" class="botao-voltar">< Voltar</a>
+          <button type="submit" class="botao-continuar">Continuar</button>          
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
